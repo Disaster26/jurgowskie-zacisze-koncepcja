@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Domki góralskie w Jurgowie | Jurgowskie Zacisze - noclegi na Spiszu</title>
+<meta name="description" content="Domki Jurgowskie Zacisze: góralski domek z bala w Jurgowie, trzy sypialnie, balkon z widokiem na góry, taras, altana, plac zabaw i bezpłatny parking. Rezerwacja: tel. 576 199 099.">
+<meta name="theme-color" content="#5E0000">
+<link rel="icon" href="img/ikona.svg" type="image/svg+xml">
+<link rel="icon" href="img/ikona-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="img/ikona-180.png">
+<link rel="preload" as="font" type="font/woff2" href="fonts/fraunces-latin-600.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/manrope-rdzen.woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-1024.webp" imagesrcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2560.webp 2560w" imagesizes="(max-width:760px) 210vh, 100vw" fetchpriority="high">
+<style>
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Fraunces";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/fraunces-latin-600.woff2) format("woff2");unicode-range:U+0000-00FF,U+2013-2014,U+2018-201E,U+2026}
+@font-face{font-family:"Fraunces";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/fraunces-latin-ext-600.woff2) format("woff2");unicode-range:U+0100-024F}
+:root{--bordo:#5E0000;--bordo2:#7A1010;--zloto:#FDB713;--szary:#F1F3F5;--linia:#DDE1E6;--tekst:#1E2126;--jasny:#545B66;--max:1240px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--tekst);font:400 17px/1.65 "Manrope",Arial,sans-serif;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.1;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(32px,4vw,50px);color:var(--bordo)}
+h3{font-size:22px;color:var(--tekst)}
+p{margin:0 0 1em}
+h2+p{margin-top:16px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-size:16px;padding:16px 24px;border-radius:3px;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-zloto{background:var(--zloto);color:#3a0000}
+.btn-zloto:hover{background:#ffc93f}
+.btn-bordo{background:var(--bordo);color:#fff}
+.btn-bordo:hover{background:var(--bordo2)}
+.btn-bialy{background:#fff;color:var(--bordo)}
+.btn-bialy:hover{background:var(--zloto);color:#3a0000}
+.znak{width:40px;height:34px;flex:none}
+.dachy{display:block;width:100%;height:26px}
+
+/* nagłówek */
+.top{position:fixed;inset:0 0 auto 0;z-index:30;color:#fff;transition:background .25s,color .25s,box-shadow .25s}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.top.scrolled{background:#fff;color:var(--bordo);box-shadow:0 1px 0 var(--linia)}
+.marka{display:flex;align-items:center;gap:12px;text-decoration:none}
+.marka b{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:22px;line-height:1.05;display:block}
+.marka small{display:block;font-size:13px;opacity:.85;font-weight:500}
+.menu{display:flex;gap:26px;align-items:center}
+.menu a{text-decoration:none;font-weight:600;font-size:15px;padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{border-color:var(--zloto)}
+.menu .btn{padding:11px 18px;font-size:15px;border:0}
+.top:not(.scrolled) .menu .btn{background:var(--zloto);color:#3a0000}
+.burger{display:none;background:none;border:0;color:inherit;padding:10px;margin-right:-10px;cursor:pointer}
+.burger svg{width:28px;height:28px}
+
+/* pierwszy ekran */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:#14100c}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,6,4,.55) 0,rgba(10,6,4,0) 22%,rgba(10,6,4,0) 40%,rgba(10,6,4,.78) 100%);z-index:1}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:110px;padding-bottom:84px}
+.hero h1{font-size:clamp(38px,min(5.4vw,7.6vh),76px);max-width:17ch;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.hero p{font-size:clamp(17px,1.5vw,20px);max-width:44ch;margin:20px 0 0;color:#f3ede6}
+.hero .akcje{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .dachy{position:absolute;left:0;right:0;bottom:-1px;z-index:3}
+
+section{padding:96px 0}
+.szary{background:var(--szary)}
+.lead{font-size:19px;color:var(--jasny);max-width:60ch}
+
+/* o domku */
+.domek{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.szczyt{clip-path:polygon(50% 0,100% 24%,100% 100%,0 100%,0 24%);aspect-ratio:4/4.3;object-fit:cover;width:100%;height:auto}
+.fakty{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.fakty li{padding:13px 0;border-top:1px solid var(--linia);font-weight:600;font-size:16px}
+.fakty li span{display:block;font-weight:400;color:var(--jasny);font-size:15px}
+
+/* przewijane rzędy */
+.rzad-glowa{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:30px}
+.strzalki{display:flex;gap:10px}
+.strzalki button{width:50px;height:50px;border-radius:50%;border:2px solid var(--bordo);background:#fff;color:var(--bordo);cursor:pointer;display:grid;place-items:center}
+.strzalki button:hover{background:var(--bordo);color:#fff}
+.strzalki svg{width:20px;height:20px}
+.rzad{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab;overscroll-behavior-x:contain}
+.rzad::-webkit-scrollbar{display:none}
+.rzad.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.rzad.ciagnie *{pointer-events:none}
+.pokoj{flex:0 0 min(78vw,360px);scroll-snap-align:start;margin:0}
+.pokoj img{width:100%;aspect-ratio:4/3.1;object-fit:cover;border-radius:3px}
+.pokoj figcaption{padding:16px 2px 0}
+.pokoj b{display:block;font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:21px;color:var(--bordo);line-height:1.2}
+.pokoj span{display:block;color:var(--jasny);font-size:15.5px;margin-top:6px}
+
+/* na zewnątrz */
+.zew{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:40px}
+.zew figure{margin:0;position:relative;overflow:hidden;border-radius:3px}
+.zew img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.zew figcaption{z-index:1;position:absolute;left:0;bottom:0;padding:26px 18px 14px;width:100%;color:#fff;font-weight:700;background:linear-gradient(transparent,rgba(0,0,0,.6))}
+.z1{grid-column:span 7;aspect-ratio:7/4.6}.z2{grid-column:span 5}.z3,.z4,.z5{grid-column:span 4;aspect-ratio:4/3}
+
+/* widok */
+.widok .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center}
+.widok img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:3px}
+.widok p{font-size:18px;color:var(--jasny);margin-top:16px}
+/* zasady */
+.zasady{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.lista{list-style:none;margin:0;padding:0}
+.lista li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--linia)}
+.lista li:last-child{border-bottom:1px solid var(--linia)}
+.lista b{color:var(--bordo)}
+
+/* druga lokalizacja - ciemna sekcja */
+.inne{background:var(--bordo);color:#fff;padding:0 0 96px;position:relative}
+.inne .dachy{transform:translateY(-25px);margin-bottom:-25px}
+.inne .siatka{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-top:80px}
+.inne h2{color:#fff}
+.inne p{color:#f1dede;font-size:18px}
+.inne .szczyt{aspect-ratio:4/3.6}
+.inne .akcje{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.inne .male{display:flex;gap:18px;align-items:center;margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.22)}
+.inne .male img{width:120px;height:84px;object-fit:cover;border-radius:3px;flex:none}
+.inne .male p{margin:0;font-size:16px}
+
+/* galeria */
+.galeria{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;overscroll-behavior-x:contain}
+.galeria::-webkit-scrollbar{display:none}
+.galeria img{height:min(56vh,440px);width:auto;max-width:none;scroll-snap-align:center;border-radius:3px;flex:none}
+.galeria.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.galeria.ciagnie img{pointer-events:none}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:stretch}
+.tel{display:inline-flex;align-items:center;gap:12px;font-family:"Fraunces",Georgia,serif;font-size:clamp(30px,3.6vw,44px);color:var(--bordo);text-decoration:none;margin:18px 0 6px}
+.tel svg{width:34px;height:34px}
+.dane{margin-top:22px;color:var(--jasny)}
+.dane b{color:var(--tekst)}
+.mapa{position:relative;min-height:360px;border-radius:3px;overflow:hidden;background:#dfe4e9}
+.mapa img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9)}
+.mapa button{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+footer{background:#fff;border-top:1px solid var(--linia);padding:34px 0;font-size:15px;color:var(--jasny)}
+footer .wrap{display:grid;grid-template-columns:1fr auto;gap:18px 28px;align-items:center}
+footer .marka{color:var(--bordo)}
+footer .linki{display:flex;flex-wrap:wrap;gap:8px 22px}
+footer .linki a{text-decoration:none}
+footer .dol{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-top:18px;border-top:1px solid var(--linia)}
+
+@media (max-width:960px){
+  .menu{display:none}
+  .burger{display:block}
+  .menu.otwarte{display:flex;position:fixed;inset:74px 0 auto 0;background:#fff;color:var(--bordo);flex-direction:column;align-items:stretch;gap:0;padding:8px 22px 22px;box-shadow:0 12px 24px rgba(0,0,0,.12)}
+  .menu.otwarte a{padding:15px 0;border-bottom:1px solid var(--linia);font-size:17px}
+  .menu.otwarte .btn{margin-top:16px;border:0;background:var(--bordo);color:#fff}
+  .domek,.zasady,.kontakt,.inne .siatka,.widok .wrap{grid-template-columns:1fr;gap:40px}
+  .domek .szczyt{max-width:520px}
+  .zew{grid-template-columns:1fr 1fr}
+  .zew figure{grid-column:span 1;aspect-ratio:4/3.2}
+  .zew .z1{grid-column:span 2;aspect-ratio:16/10}
+}
+@media (max-width:600px){
+  body{font-size:16.5px}
+  section{padding:68px 0}
+  .wrap{padding:0 18px}
+  .top .wrap{height:66px}
+  .menu.otwarte{inset:66px 0 auto 0}
+  .marka b{font-size:19px}
+  .marka small{font-size:12px}
+  .znak{width:34px;height:29px}
+  .hero .wrap{padding-top:96px;padding-bottom:62px}
+  .hero h1{font-size:clamp(34px,9.6vw,44px)}
+  .hero p{margin-top:14px;font-size:16.5px}
+  .hero .akcje{margin-top:24px;flex-direction:column;align-items:stretch}
+  .hero .btn{padding:14px 18px}
+  .fakty{grid-template-columns:1fr}
+  .lista li{grid-template-columns:1fr;gap:4px}
+  .strzalki{display:none}
+  .zew{gap:10px}
+  .zew figcaption{font-size:14.5px;padding:20px 12px 10px}
+  .inne{padding-bottom:68px}
+  .inne .siatka{padding-top:60px}
+  .inne .akcje{flex-direction:column;align-items:stretch}
+  .galeria img{height:300px}
+  .mapa{min-height:300px}
+  footer .wrap{grid-template-columns:1fr}
+}
+@media (max-height:820px) and (min-width:601px){
+  .hero .wrap{padding-top:96px;padding-bottom:64px}
+  .hero p{margin-top:14px}
+  .hero .akcje{margin-top:24px}
+}
+@media (max-height:700px) and (max-width:600px){
+  .hero .wrap{padding-top:84px;padding-bottom:48px}
+  .hero h1{font-size:33px}
+  .hero p{font-size:15.5px;margin-top:10px}
+  .hero .akcje{margin-top:24px;gap:10px}
+  .hero .btn{padding:12px 16px}
+}
+</style>
+<style>
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="marka" href="#"><svg class="znak" viewBox="0 0 48 40" aria-hidden="true"><circle cx="33" cy="13" r="6.5" fill="#FDB713"/><path d="M3 37 24 9l21 28" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linejoin="miter"/><path d="M15 37l9-12 9 12" fill="none" stroke="currentColor" stroke-width="3"/></svg><span><b>Jurgowskie Zacisze</b><small>domki góralskie w Jurgowie</small></span></a>
+    <nav class="menu" aria-label="Menu">
+      <a href="#domek">Domek</a><a href="#na-zewnatrz">Na zewnątrz</a><a href="#galeria">Galeria</a><a href="#zasady">Zasady pobytu</a><a href="#kontakt">Kontakt</a>
+      <a class="btn btn-bordo" href="tel:+48576199099"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h3.6l1.9 4.8-2.4 1.5a11 11 0 0 0 5.1 5.1l1.5-2.4 4.8 1.9v3.6a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>576 199 099</a>
+    </nav>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="2"/></svg></button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <img src="img/hero-1024.webp" srcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2560.webp 2560w" sizes="(max-width:760px) 210vh, 100vw" width="1024" height="498" alt="Domki Jurgowskie Zacisze wieczorem, oświetlone werandy z bala" fetchpriority="high" style="object-position:30% 50%">
+  <div class="wrap">
+    <h1>Domki góralskie w Jurgowie - Jurgowskie Zacisze</h1>
+    <p>Domek z bala z trzema sypialniami, balkonem z widokiem na góry i tarasem z altaną. Cisza, własny parking i Tatry za oknem.</p>
+    <div class="akcje">
+      <a class="btn btn-zloto" href="tel:+48576199099"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h3.6l1.9 4.8-2.4 1.5a11 11 0 0 0 5.1 5.1l1.5-2.4 4.8 1.9v3.6a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Zadzwoń: 576 199 099</a>
+      <a class="btn btn-bialy" href="#kontakt">Zapytaj o wolny termin</a>
+    </div>
+  </div>
+  <svg class="dachy" aria-hidden="true" preserveAspectRatio="none"><defs><pattern id="d1" width="56" height="26" patternUnits="userSpaceOnUse"><path d="M0 26 28 3l28 23z" fill="#fff"/></pattern></defs><rect width="100%" height="26" fill="url(#d1)"/></svg>
+</section>
+
+<section id="domek">
+  <div class="wrap domek">
+    <div>
+      <h2>Góralski dom z bala dla całej rodziny</h2>
+      <p class="lead">Jurgowskie Zacisze to domek góralski w Jurgowie, zbudowany z bala i urządzony w drewnie, z rzeźbionymi meblami i góralskimi wzorami na ścianach.</p><p>Na piętrze są dwie sypialnie, w tym czteroosobowa z balkonem z widokiem na góry. Na parterze trzecia sypialnia, aneks kuchenny z jadalnią, łazienka i salon, w którym mogą spać jeszcze dwie osoby.</p>
+      <ul class="fakty"><li>3 sypialnie<span>na piętrze i na parterze</span></li><li>Salon z TV SAT<span>z możliwością noclegu dla 2 osób</span></li><li>Aneks kuchenny<span>indukcja, zmywarka, lodówka, mikrofala</span></li><li>Balkon i taras<span>widok na góry, latem grill</span></li><li>Plac zabaw i altana<span>tuż przy domku</span></li><li>Bezpłatny parking<span>monitorowany, przy domku</span></li></ul>
+    </div>
+    <img src="img/front-800.webp" srcset="img/front-800.webp 800w, img/front-1200.webp 1200w" sizes="(max-width:960px) 92vw, 560px" width="800" height="532" alt="Domek góralski Jurgowskie Zacisze w Jurgowie, widok od frontu" loading="lazy" decoding="async" class="szczyt">
+  </div>
+</section>
+
+<section class="szary" data-rzad>
+  <div class="wrap">
+    <div class="rzad-glowa"><h2>Wnętrza domku</h2><div class="strzalki"><button type="button" data-kier="-1" aria-label="Poprzednie"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></button><button type="button" data-kier="1" aria-label="Następne"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></button></div></div>
+    <div class="rzad"><figure class="pokoj"><img src="img/syp4-800.webp" srcset="img/syp4-800.webp 800w, img/syp4-1200.webp 1200w" sizes="(max-width:600px) 78vw, 360px" width="800" height="532" alt="Sypialnie na piętrze" loading="lazy" decoding="async"><figcaption><b>Sypialnie na piętrze</b><span>Czteroosobowa z balkonem na góry i trzyosobowa, obie z łożem małżeńskim.</span></figcaption></figure><figure class="pokoj"><img src="img/syp-parter-800.webp" srcset="img/syp-parter-800.webp 800w, img/syp-parter-1200.webp 1200w" sizes="(max-width:600px) 78vw, 360px" width="800" height="532" alt="Łoże małżeńskie" loading="lazy" decoding="async"><figcaption><b>Łoże małżeńskie</b><span>Łoże małżeńskie jest w każdej z trzech sypialni.</span></figcaption></figure><figure class="pokoj"><img src="img/syp3-800.webp" srcset="img/syp3-800.webp 800w, img/syp3-1200.webp 1200w" sizes="(max-width:600px) 78vw, 360px" width="800" height="532" alt="Łóżka pojedyncze" loading="lazy" decoding="async"><figcaption><b>Łóżka pojedyncze</b><span>Drewniane łóżka pod skosem dachu.</span></figcaption></figure><figure class="pokoj"><img src="img/kuchnia-800.webp" srcset="img/kuchnia-800.webp 800w, img/kuchnia-1200.webp 1200w" sizes="(max-width:600px) 78vw, 360px" width="800" height="532" alt="Aneks kuchenny z jadalnią" loading="lazy" decoding="async"><figcaption><b>Aneks kuchenny z jadalnią</b><span>Kuchenka indukcyjna, mikrofala, czajnik, lodówka, zmywarka i duży stół.</span></figcaption></figure><figure class="pokoj"><img src="img/salon-598.webp" srcset="img/salon-598.webp 598w" sizes="(max-width:600px) 78vw, 360px" width="598" height="900" alt="Salon z TV SAT" loading="lazy" decoding="async"><figcaption><b>Salon z TV SAT</b><span>Wypoczynek z możliwością noclegu dla dwóch osób.</span></figcaption></figure><figure class="pokoj"><img src="img/lazienka-598.webp" srcset="img/lazienka-598.webp 598w" sizes="(max-width:600px) 78vw, 360px" width="598" height="900" alt="Łazienka" loading="lazy" decoding="async"><figcaption><b>Łazienka</b><span>Kabina prysznicowa. Ręczniki we własnym zakresie.</span></figcaption></figure><figure class="pokoj"><img src="img/kuchnia2-800.webp" srcset="img/kuchnia2-800.webp 800w, img/kuchnia2-1200.webp 1200w" sizes="(max-width:600px) 78vw, 360px" width="800" height="545" alt="Parter z jadalnią" loading="lazy" decoding="async"><figcaption><b>Parter z jadalnią</b><span>Kuchnia, stół dla całej rodziny i schody na piętro.</span></figcaption></figure></div>
+  </div>
+</section>
+
+<section id="na-zewnatrz">
+  <div class="wrap">
+    <h2>Taras, altana i plac zabaw</h2>
+    <p class="lead" style="margin-top:16px">Bezpośrednio przy domku jest taras, latem grill, altana, plac zabaw dla dzieci i bezpłatny, monitorowany parking.</p>
+    <div class="zew"><figure class="z1"><img src="img/bok-800.webp" srcset="img/bok-800.webp 800w, img/bok-1200.webp 1200w" sizes="(max-width:960px) 50vw, 700px" width="800" height="532" alt="Domki z bala w Jurgowie" loading="lazy" decoding="async"><figcaption>Domki z bala w Jurgowie</figcaption></figure><figure class="z2"><img src="img/taras-800.webp" srcset="img/taras-800.webp 800w, img/taras-1200.webp 1200w" sizes="(max-width:960px) 50vw, 700px" width="800" height="532" alt="Zadaszony taras" loading="lazy" decoding="async"><figcaption>Zadaszony taras</figcaption></figure><figure class="z3"><img src="img/plac-800.webp" srcset="img/plac-800.webp 800w, img/plac-1200.webp 1200w" sizes="(max-width:960px) 50vw, 700px" width="800" height="532" alt="Plac zabaw" loading="lazy" decoding="async"><figcaption>Plac zabaw</figcaption></figure><figure class="z4"><img src="img/altana-800.webp" srcset="img/altana-800.webp 800w, img/altana-1200.webp 1200w" sizes="(max-width:960px) 50vw, 700px" width="800" height="532" alt="Altana i ogród" loading="lazy" decoding="async"><figcaption>Altana i ogród</figcaption></figure><figure class="z5"><img src="img/laka-800.webp" srcset="img/laka-800.webp 800w, img/laka-1200.webp 1200w" sizes="(max-width:960px) 50vw, 700px" width="800" height="532" alt="Domki wśród łąk, z widokiem na góry" loading="lazy" decoding="async"><figcaption>Domki wśród łąk, z widokiem na góry</figcaption></figure></div>
+  </div>
+</section>
+
+<section class="widok szary">
+  <div class="wrap"><img src="img/widok-1600.webp" srcset="img/widok-1024.webp 1024w, img/widok-1600.webp 1600w, img/widok-2560.webp 2560w" sizes="(max-width:960px) 92vw, 720px" width="1600" height="1198" alt="Widok na Tatry z okolic domku w Jurgowie" loading="lazy" decoding="async"><div><h2>Z balkonu widać góry</h2><p>Jurgów leży na Spiszu, u podnóża Tatr. Rano kawa na balkonie z widokiem na szczyty, po południu szlak albo stok, wieczorem grill przy altanie.</p></div></div>
+</section>
+
+<section id="zasady">
+  <div class="wrap zasady">
+    <div><h2>Zasady pobytu</h2><p class="lead" style="margin-top:16px">Cena zależy od liczby osób (sypialni), liczby nocy i sezonu. Dokładną kwotę podamy telefonicznie.</p></div>
+    <ul class="lista"><li><b>Doba hotelowa</b><span>od godz. 15:00 do 10:30</span></li><li><b>Zameldowanie</b><span>15:00 - 20:00, wcześniejszy lub późniejszy przyjazd po uzgodnieniu telefonicznym</span></li><li><b>Przyjazd i wyjazd</b><span>o planowanej godzinie prosimy poinformować min. godzinę wcześniej</span></li><li><b>Wyjazd</b><span>przed wyjazdem należy zdać domek</span></li><li><b>Ręczniki</b><span>we własnym zakresie (można zamówić za dopłatą)</span></li><li><b>Cel pobytu</b><span>domki wynajmujemy w celu wypoczynkowym</span></li></ul>
+  </div>
+</section>
+
+<section class="inne">
+  <svg class="dachy" aria-hidden="true" preserveAspectRatio="none"><defs><pattern id="d2" width="56" height="26" patternUnits="userSpaceOnUse"><path d="M0 26 28 3l28 23z" fill="#5E0000"/></pattern></defs><rect width="100%" height="26" fill="url(#d2)"/></svg>
+  <div class="wrap siatka">
+    <div>
+      <h2>Mamy też domek w Zakopanem</h2>
+      <p style="margin-top:18px">Domek góralski na Olczy, ok. 4 km od centrum Zakopanego, z widokiem na całą panoramę Tatr. Dwie trzyosobowe sypialnie, balkon, taras i bezpłatny parking przy domku.</p>
+      <div class="akcje"><a class="btn btn-zloto" href="https://wylinka-podglad.pl/domki-goralskie-zakopane-koncepcja/">Zobacz domek w Zakopanem</a><a class="btn btn-bialy" href="tel:+48503151204"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h3.6l1.9 4.8-2.4 1.5a11 11 0 0 0 5.1 5.1l1.5-2.4 4.8 1.9v3.6a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>503 151 204</a></div>
+      <div class="male"><img src="img/osrodek-800.webp" srcset="img/osrodek-800.webp 800w, img/osrodek-1200.webp 1200w" sizes="120px" width="800" height="532" alt="Ośrodek Alina w Zakopanem" loading="lazy" decoding="async"><p>Dla grup, kolonii i wycieczek: Ośrodek Alina w Zakopanem, 100 miejsc noclegowych.</p></div>
+    </div>
+    <img src="img/zakopane-800.webp" srcset="img/zakopane-800.webp 800w, img/zakopane-1200.webp 1200w" sizes="(max-width:960px) 92vw, 600px" width="800" height="533" alt="Domki góralskie w Zakopanem na tle Tatr" loading="lazy" decoding="async" class="szczyt">
+  </div>
+</section>
+
+<section id="galeria" data-rzad>
+  <div class="wrap"><div class="rzad-glowa"><h2>Galeria</h2><div class="strzalki"><button type="button" data-kier="-1" aria-label="Poprzednie"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></button><button type="button" data-kier="1" aria-label="Następne"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></button></div></div></div>
+  <div class="galeria" style="padding:0 max(22px,calc((100vw - 1196px)/2))"><img src="img/blisko-800.webp" srcset="img/blisko-800.webp 800w, img/blisko-1200.webp 1200w" sizes="(max-width:600px) 460px, 700px" width="800" height="532" alt="Domek z bala, szczyt z balkonem" loading="lazy" decoding="async"><img src="img/syp-b-1024.webp" srcset="img/syp-b-1024.webp 1024w, img/syp-b-1600.webp 1600w" sizes="(max-width:600px) 460px, 700px" width="1024" height="766" alt="Sypialnia" loading="lazy" decoding="async"><img src="img/taras2-800.webp" srcset="img/taras2-800.webp 800w, img/taras2-1200.webp 1200w" sizes="(max-width:600px) 460px, 700px" width="800" height="532" alt="Taras z ławą" loading="lazy" decoding="async"><img src="img/szer-syp-1600.webp" srcset="img/szer-syp-1024.webp 1024w, img/szer-syp-1600.webp 1600w, img/szer-syp-2560.webp 2560w" sizes="(max-width:600px) 460px, 700px" width="1600" height="720" alt="Sypialnia z łożem małżeńskim" loading="lazy" decoding="async"><img src="img/kuchnia3-1024.webp" srcset="img/kuchnia3-1024.webp 1024w, img/kuchnia3-1600.webp 1600w" sizes="(max-width:600px) 460px, 700px" width="1024" height="461" alt="Kuchnia z jadalnią" loading="lazy" decoding="async"><img src="img/sciezka-800.webp" srcset="img/sciezka-800.webp 800w, img/sciezka-1200.webp 1200w" sizes="(max-width:600px) 460px, 700px" width="800" height="532" alt="Dojazd do domków" loading="lazy" decoding="async"><img src="img/salon2-1024.webp" srcset="img/salon2-1024.webp 1024w, img/salon2-1600.webp 1600w" sizes="(max-width:600px) 460px, 700px" width="1024" height="659" alt="Salon" loading="lazy" decoding="async"><img src="img/jadalnia-800.webp" srcset="img/jadalnia-800.webp 800w, img/jadalnia-1200.webp 1200w" sizes="(max-width:600px) 460px, 700px" width="800" height="532" alt="Jadalnia na parterze" loading="lazy" decoding="async"><img src="img/szer-syp2-1024.webp" srcset="img/szer-syp2-1024.webp 1024w, img/szer-syp2-1600.webp 1600w" sizes="(max-width:600px) 460px, 700px" width="1024" height="461" alt="Sypialnia na piętrze" loading="lazy" decoding="async"><img src="img/zima-640.webp" srcset="img/zima-640.webp 640w" sizes="(max-width:600px) 460px, 700px" width="640" height="425" alt="Domki zimą" loading="lazy" decoding="async"></div>
+</section>
+
+<section id="kontakt" class="szary">
+  <div class="wrap kontakt">
+    <div>
+      <h2>Rezerwacja i kontakt</h2>
+      <p class="lead" style="margin-top:16px">Wolne terminy i cenę najszybciej sprawdzimy telefonicznie. Można też napisać e-mail z datami pobytu i liczbą osób.</p>
+      <a class="tel" href="tel:+48576199099"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h3.6l1.9 4.8-2.4 1.5a11 11 0 0 0 5.1 5.1l1.5-2.4 4.8 1.9v3.6a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>576 199 099</a>
+      <div class="dane"><p><b>E-mail:</b> <a href="mailto:biuro@alina-zakopane.pl">biuro@alina-zakopane.pl</a><br><b>Adres:</b> 34-532 Jurgów</p></div>
+      <a class="btn btn-bordo" href="tel:+48576199099"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h3.6l1.9 4.8-2.4 1.5a11 11 0 0 0 5.1 5.1l1.5-2.4 4.8 1.9v3.6a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Zadzwoń i zapytaj o termin</a>
+    </div>
+    <div class="mapa"><img src="img/laka-800.webp" srcset="img/laka-800.webp 800w, img/laka-1200.webp 1200w" sizes="(max-width:960px) 92vw, 640px" width="800" height="532" alt="Okolica domku" loading="lazy" decoding="async"><button class="btn btn-bordo" type="button" data-src="https://www.google.com/maps?q=Jurgów+34-532&amp;output=embed">Pokaż mapę dojazdu</button></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="marka" href="#"><svg class="znak" viewBox="0 0 48 40" aria-hidden="true"><circle cx="33" cy="13" r="6.5" fill="#FDB713"/><path d="M3 37 24 9l21 28" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linejoin="miter"/><path d="M15 37l9-12 9 12" fill="none" stroke="currentColor" stroke-width="3"/></svg><span><b>Jurgowskie Zacisze</b><small>domki góralskie w Jurgowie</small></span></a>
+    <div class="linki"><a href="tel:+48576199099">tel. 576 199 099</a><a href="mailto:biuro@alina-zakopane.pl">biuro@alina-zakopane.pl</a><a href="https://wylinka-podglad.pl/domki-goralskie-zakopane-koncepcja/">Domek w Zakopanem</a></div>
+    <div class="dol"><span>© 2026 Jurgowskie Zacisze. Kompleks wczasowo-wypoczynkowy Alina.</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=alina-zakopane.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+  </div>
+</footer>
+<script>
+(function(){
+var top=document.querySelector('.top');
+function sc(){top.classList.toggle('scrolled',window.scrollY>40||document.querySelector('.menu.otwarte'))}
+window.addEventListener('scroll',sc,{passive:true});sc();
+var b=document.querySelector('.burger'),m=document.querySelector('.menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('otwarte');b.setAttribute('aria-expanded',o);sc()});
+m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('otwarte');b.setAttribute('aria-expanded',false);sc()})});
+document.querySelectorAll('[data-rzad]').forEach(function(w){
+  var r=w.querySelector('.rzad,.galeria');
+  w.querySelectorAll('[data-kier]').forEach(function(btn){btn.addEventListener('click',function(){r.scrollBy({left:(+btn.dataset.kier)*r.clientWidth*.8,behavior:'smooth'})})});
+  var x0,s0,ruch=false;
+  r.addEventListener('mousedown',function(ev){x0=ev.pageX;s0=r.scrollLeft;ruch=true;ev.preventDefault()});
+  window.addEventListener('mousemove',function(ev){if(!ruch)return;var d=ev.pageX-x0;if(Math.abs(d)>4)r.classList.add('ciagnie');r.scrollLeft=s0-d});
+  window.addEventListener('mouseup',function(){if(!ruch)return;ruch=false;r.classList.remove('ciagnie')});
+});
+var mb=document.querySelector('.mapa button');
+if(mb)mb.addEventListener('click',function(){var f=document.createElement('iframe');f.src=mb.dataset.src;f.title='Mapa dojazdu';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';mb.parentNode.appendChild(f);mb.remove()});
+})();
+</script>
+</body>
+</html>
